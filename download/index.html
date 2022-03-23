@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>uncompress.js</title>
+		<script src="../../js/uncompress.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<h1>Read an archive after downloading</h1>
+
+		<div>
+			<button id="go" disabled="true">Waiting for libraries to load ...</button>
+
+			<p>
+				<input id="download_url" type="text" style="width: 600px" value="https://raw.githubusercontent.com/workhorsy/uncompress.js/master/example_rar_5.rar" />
+			</p>
+			<p>
+				password: <input id="filePassword" type="password" />
+			</p>
+
+			<p>
+				This will list all entry data:
+			</p>
+			<div id="errorList" style="color: red;"></div>
+			<div id="entryList"></div>
+
+			<p>
+				Try it on these archives that contain images:
+				<ul>
+					<li><a href="https://github.com/workhorsy/uncompress.js/blob/master/example_rar_5.rar?raw=true">example_rar_5.rar</a></li>
+					<li><a href="https://github.com/workhorsy/uncompress.js/blob/master/example.tar?raw=true">example.tar</a></li>
+					<li><a href="https://github.com/workhorsy/uncompress.js/blob/master/example.zip?raw=true">example.zip</a></li>
+				</ul>
+			</p>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
